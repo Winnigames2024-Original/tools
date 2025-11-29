@@ -3,6 +3,17 @@
     <title>Cloud | Upload</title>
   </head>
   <body>
+    
     <h1>Upload</h1>
+    
+    <form action="./file_upload.php" method="post" enctype="multipart/form-data">
+      
+        <label for="fileToUpload">Select file to upload:</label>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <br><br>
+        <input type="submit" value="Upload File">
+      
+    </form>
+    
   </body>
 </html>
