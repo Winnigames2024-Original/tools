@@ -13,16 +13,15 @@
 
   <script>
     const createBtn = document.getElementById("createButton");
-    const defaultUrl = "https://fixti.ru/download.php?files=";
     createBtn.onclick = function() {
       const fileUrl = document.getElementById("fileUrlLink").value;
 
-      const userAnswer = confirm('Your link: ' + defautlUrl + fileUrl + ' . Open link?');
+      const userAnswer = confirm('Your link: https://fixti.ru/download.php?files=' + fileUrl + ' . Open link?');
 
       if (userAnswer) {
-        window.location = defautlUrl + fileUrl;
+        window.location = "https://fixti.ru/download.php?files=" + fileUrl;
       } else {
-        window.location = window.location;
+        
       }
     }
   </script>
