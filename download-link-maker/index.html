@@ -12,8 +12,11 @@
   </body>
 
   <script>
-    document.getElementById("createButton").onclick = function() {
-      alert("Привет, мир!");
+    const createBtn = document.getElementById("createButton")
+    createBtn.onclick = function() {
+      const fileUrl = document.getElementById("fileUrlLink").text
+      
+      alert(fileUrl);
     };
   </script>
 </html>
