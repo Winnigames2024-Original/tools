@@ -12,9 +12,18 @@
   </body>
 
   <script>
-    document.getElementById("createButton").onclick = function() {
+    const createBtn = document.getElementById("createButton");
+    const defaultUrl = "https://fixti.ru/download.php?files=";
+    createBtn.onclick = function() {
+      const fileUrl = document.getElementById("fileUrlLink").value;
 
-      alert('Your link: https://fixti.ru/download.php?files=' + document.getElementById("fileUrlLink").value)
+      const userAnswer = confirm('Your link: ' + defautlUrl + fileUrl + ' . Open link?');
 
+      if (userAnswer) {
+        window.location = defautlUrl + fileUrl;
+      } else {
+        window.location = window.location;
+      }
+    }
   </script>
 </html>
