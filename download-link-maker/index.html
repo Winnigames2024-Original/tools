@@ -18,7 +18,7 @@
       const fileUrl = document.getElementById("fileUrlLink").value;
 	  const fullFileUrl = defautlUrl + fileUrl;
 
-      const userAnswer = confirm('Your link: ' + defaultUrl + fileUrl + ' . Open link?');
+      const userAnswer = alert('Your link: ' + defaultUrl + fileUrl + ' . Open link?');
 
       if (userAnswer) {
         console.log("Opening link: " + fullFileUrl + "...");
