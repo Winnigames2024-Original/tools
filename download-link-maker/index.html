@@ -16,20 +16,12 @@
     const defaultUrl = "https://fixti.ru/download.php?files=";
     createBtn.onclick = function() {
       const fileUrl = document.getElementById("fileUrlLink").value;
-	  const fullFileUrl = defautlUrl + fileUrl;
 
-      const userAnswer = confirm('Your link: ' + defaultUrl + fileUrl + ' . Open link?');
+      const userAnswer = confirm('Your link: ' + defautlUrl + fileUrl + ' . Open link?');
 
       if (userAnswer) {
-        console.log("Opening link: " + fullFileUrl + "...");
-        window.location = fullFileUrl;
+        window.location = defautlUrl + fileUrl;
       } else {
-        console.log("Open link: " + fullFileUrl + " canceled.");
       }
-
-     //  let res = confirm('Your link: ' + defaultUrl + fileUrl + " . Open link?");
-	    // console.log(res);
-     //  alert('Ваша ссылка: ' + defaultUrl + fileUrl);
-    };
   </script>
 </html>
