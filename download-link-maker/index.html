@@ -13,10 +13,11 @@
 
   <script>
     const createBtn = document.getElementById("createButton");
+    const defaultUrl = "https://fixti.ru/download.php?files=";
     createBtn.onclick = function() {
       const fileUrl = document.getElementById("fileUrlLink").value;
       
-      alert(fileUrl);
+      alert('Ваша ссылка: ' + defaultUrl + fileUrl);
     };
   </script>
 </html>
